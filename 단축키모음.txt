@@ -1,0 +1,19 @@
+Setting shortcut : ctrl + ,
+
+자동 완성 단축키 : ctrl + space
+
+주석 단축키 : ctrl + /
+
+저장 단축키 : ctrl + s
+
+live server 단축키 : alt + l + o
+
+줄 복사 : ALT + SHIFT + 방향키 위아래
+
+줄 이동 : ALT + 방향키 위아래
+
+emozi, 기호 사용 시 단축키 
+      1. ㅁ + 한자 키
+      2. 윈도우 + .
+
+vsc 터미널: ctrl + SHIFT + `

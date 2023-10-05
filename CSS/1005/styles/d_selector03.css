@@ -1,0 +1,35 @@
+
+
+nav ul li {
+  float: left;
+  width: 150px;
+  padding: 10px;
+}
+
+
+/* 방문한 링크와 방문하지 않은 링크 설정 */
+nav a:link, nav a:visited {
+  display:"block";
+  font-size: 14px;
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* 마우스 커서가 해당 요소에 올렸을 때 지정 */
+nav a:hover {
+  background-color: #222;
+  color: white;
+}
+
+/* 마우스 커서로 클릭했을 때 지정 */
+nav a:active {
+  background-color: red;
+}
+
+/* 웹 요소에 초점을 맞췄을 때 지정 */
+nav a:focus {
+  border: 2px solid blue;
+}

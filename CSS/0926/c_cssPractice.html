@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 스타일 시트 적용 예제</title>
+  <style>main h2 {color: pink;}</style>
+  <link rel="stylesheet" href="styles/c_cssPractice.css">
+  <!-- 
+    link 적용 시 폴더 구조에 따른 수신처 작성법 
+    1. 동일한 폴더 내의 파일: 파일명.확장자
+    2. 동일한 폴더 내의 하위 폴더: 폴더명/파일명.확장자
+    3. 상위 폴더 내의 파일: ../파일명.확장자
+    4. 상위 폴더 내의 다른 폴더: ../폴더명/파일명.확장자
+
+  -->
+</head>
+<body>
+    <!-- 
+    h1, h2 p ul table, thead, tbody, th, td
+    img, a, 
+    //// 시맨틱 태그 아래 ////
+    header main section footer
+  -->
+  <h1 style="text-align: center;">HTML 연습 예시</h1>
+  <h2>Head 태그</h2>
+  <h2>Text</h2>
+  <p>HTML 예제 실습입니다.</p>
+  <h2>List</h2>
+  <p>
+    <ul>
+      <li>항목 1</li>
+      <li>항목 2</li>
+      <li>항목 3</li>
+    </ul>
+  </p>
+  
+  <h2>Table</h2>
+<table>
+  <thead>
+    <tr>
+      <th width="200">이름</th>
+      <th>나이</th>
+      <th width="400" colspan="2">이메일</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>홍길동</td>
+      <td>30</td>
+      <td colspan="2">hong@example.com</td>
+    </tr>
+    <tr>
+      <td>김철수</td>
+      <td>25</td>
+      <td colspan="1">kim@example.com</td> <td colspan="1"></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Image</h2>
+<img src="https://images.unsplash.com/photo-1587896046517-d8154a1e633c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="white cat in a box" width="150px">
+
+<h2>시맨틱 태그</h2>
+<!-- 헤더 h1 인라인 글자색 토마토 -->
+<header>
+<h1 style="color: tomato;">웹사이트 제목</h1>
+<ul>
+  <li><a href="#">메뉴 1</a></li>
+  <li><a href="#">메뉴 2</a></li>
+  <li><a href="#">메뉴 3</a></li>
+</ul>
+</header>
+<!-- 메인 h2태그 내부 인라인 시트 - 글자색 pink -->
+  <main>
+    <Section>
+      <h2>섹션 제목</h2>
+    </Section>
+    <section>
+      <h3>글 제목</h3>
+      <p>본문 내용</p>
+    </section>
+    <section>
+      <h3>글 제목</h3>
+      <p>본문 내용</p>
+    </section>
+  </main>
+  
+  <!-- footer를 외부 인라인 시트로 글자색 blue 지정 -->
+  <footer>
+    저작권 2023 모든 권리 부여
+  </footer>
+
+</body>
+</html>

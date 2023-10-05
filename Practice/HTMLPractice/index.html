@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpo=" width=device-width, initial-scale=1.0">
+  <title>HTML 복습</title>
+  <style>
+    h2,
+    a {
+      color: darkblue;
+    }
+
+    input {
+      height: 3em;
+      margin-bottom: 10px;
+      padding-left: 15px;
+    }
+
+    textarea {
+      margin-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--  
+    header, main(section), ul, ol, 
+    form, fieldset, legend, label, 
+    input(placeholder, required 속성), textarea 등 활용
+  -->
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Lotte_Giants.svg/640px-Lotte_Giants.svg.png" alt="logo"
+    width="200px">
+
+  <Main>
+    <section>
+      <h2>John Doe</h2>
+      <p>Email:<a href="mailto:John.Doe@example.com">John.Doe@example.com</a></p>
+      <h2>Education & Work experience</h2>
+      <ul>
+        <li>MSc in Computer Science, XYZ University 2018~2020</li>
+        <li>Software Developer, ABC Corp, 2020-present</li>
+      </ul>
+      <h2>Certifications & Awards</h2>
+      <ol type="A">
+        <li>Certiffied Python Developer, 2019</li>
+        <li>Best Employee of the Year, ABC Corp, 2021</li>
+      </ol>
+    </section>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="userName">Name:</label><br />
+        <input type="text" placeholder="Enter your name" id="userName" autofocus required style="width: 100%;" />
+        <br />
+        <label for="userEmail">Email:</label><br />
+        <input type="email" placeholder="Enter your email" id="userEmail" required style="width: 100%;" />
+        <br />
+        <label for="message">Message:</label><br />
+        <textarea cols="90%" rows="5" id="message" placeholder="Enter your message"></textarea>
+        <br />
+        <input type="submit" value="Submit" style="width: 100%;" />
+      </fieldset>
+    </form>
+  </Main>
+</body>
+
+</html>

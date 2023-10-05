@@ -1,0 +1,30 @@
+/* a 요소 값에서 href 속성값이 있는 요소만 적용 */
+a[href] {
+  background-color: pink; border: 1px solid black; font-weight: normal; font-weight: bolder; 
+}
+
+/* href 속성 값이 https://naver.com인 요소만 적용 */
+/* a 태그임에도 밑 줄 사라짐 */
+a[href = "https://naver.com"] {
+  text-decoration: none;
+}
+
+/* class 속성에 button 값이 있는 요소를 찾는 선택자 */
+li {
+  margin: 10px;
+  list-style: none;
+}
+
+[class ~= "button"] {
+  color: white;
+}
+
+/* 외국어 서비스 예제 */
+
+a[title |= us] {
+  background-color: beige;
+}
+
+a[title |= ch] {
+  background-color: greenyellow;
+}

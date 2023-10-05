@@ -1,0 +1,32 @@
+.header1 {
+  font-size: 21px;
+}
+
+.header2 {
+  font-size: 25px;
+}
+
+.font {
+  font-size: 20px;
+}
+
+ul.a {
+  text-decoration-line: underline;
+}
+
+.visited {
+  color: blue;
+}
+
+#user.id {
+  padding-top: 0px;
+}
+
+.reset {
+  border: 0px;
+  background-color: transparent;
+}
+
+.reset {
+  padding-left: 0%;
+}
