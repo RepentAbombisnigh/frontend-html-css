@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 실습 예제</title>
+  <style>
+    tbale, th, td {
+      border: 1px solid #111;
+      border-collapse: collapse;
+    }
+    th, td {padding: 10px, 20px}
+  </style>
+</head>
+<body>
+  <h1><b>상품 구성</b></h1>
+
+  <table>
+    <caption>선물용과 가정용 상품 구성</caption>
+<!-- 테이블의 제목 -->
+    <thead>
+      <tr>
+        <th>용도</th> <!-- th태그 사용으로 자동으로 중앙 나열  -->
+        <th>중량</th>
+        <th>갯수</th>
+        <th>가격</th>
+    </thead>
+<!-- 테이블의 본문 -->
+<tbody>
+  <tr>
+    <td rowspan="2">선물용</td>
+    <td>3KG</td>
+    <td>11~16과</td>
+    <td>35,000원</td>
+  </tr>
+  <tr>
+    <!-- <td>선물용</td> -->
+    <td>5KG</td>
+    <td>18~26과</td>
+    <td>52,000원</td>
+  </tr>
+  <tr>
+    <td rowspan="2">가정용</td>
+    <td>3KG</td>
+    <td>11~16과</td>
+    <td>30,000원</td>
+  </tr>
+  <tr>
+    <!-- <td>가정용</td> -->
+    <td>5KG</td>
+    <td>18~26과</td>
+    <td>47,000원</td>
+  </tr>
+</tbody>
+    </tr>
+
+  </table>
+</body>
+</html>

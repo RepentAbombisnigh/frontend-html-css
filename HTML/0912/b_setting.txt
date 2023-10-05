@@ -1,0 +1,22 @@
+# vsc 환경설정 #
+
+1. setting > stab size > 2
+
+2. setting > word wrap (automatic commend line adjustment) > on
+
+3. Essential extensions 
+>Korean language pack
+>Live server(without refesh able to update the website coding) 
+>Auto rename tag 
+>Bracket pair colorizer - integrated by Vscode
+>>Bracket Pair Colorization > Enabled
+>>Bracket Pairs Horizontal > Active
+>better comments > setting > better comments:tag > edit
+ Better commtns !빨간색, ?파란색 todo //회색에 밑줄 *검은색 바탕에 초록 ^검은 바탕에 노란색
+
+4. optional extensions
+>Indent-rainbow
+>Vscode-icons
+
+5. optional application
+>Lightshot

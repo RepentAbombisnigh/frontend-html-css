@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form</title>
+</head>
+<body>
+  <!--
+    HTML Form 정의
+    : 사용자로부터 정보를 입력받기 위한 인터페이스
+    : 사용자가 웹 사이트로 정보를 보낼 수 있는 요소
+
+    - textfield, checkbox, radio button 등의 다양한 유형 입력 요소를 위한 컨테이너
+    - 폼 자체는 표시되지 x
+    - EX. ID Password input, Login button, Register button, etc
+  -->
+
+
+  <!-- 
+    form 태그의 기본 형태
+    <form 속성='속성값'
+      여러 폼 요소(입력 받을 수 있는 요소)
+    </form>
+
+    form태그는 속성을 사용해서 입력받은 자료를 어떤 형식으로 서버에 전송할 것이지, 어떤 프로그램을 이용해 처리할 것이지를 지정.
+
+    <form태그의 속성>
+      method 속성: 사용자가 입력한 내용을 서버 프로그램에 어떻게 넘길지 지정
+
+      - get: URL에 폼 데이터를 포함시켜 전송
+        데이터를 전송하는 길이 제한,(256~4096 byte)
+        주소 표시줄에 사용자가 입력한 내용이 그대로 표시(보안성이 낮다.)
+        주로 데이터 검색에 사용
+
+      - post: 데이터를 요청 본문에 포함시켜 전송
+        민감한 데이터 전송이나 데이터 변경 작업(비밀번호 변경 등)에 사용
+        입력한 내용 길이 제한 X, 사용자가 입력한 내용 드러나지 않는다.
+
+      action 속성: 폼 데이터를 처리할 서버의 URL을 지정
+
+      target 속성: action 속성에서 지정한 파일을 현재 창이 아닌 다른 위치에서 열도록 지정
+
+      autocomplete 속성: 자동 완성 기능을 나타내는 속성  
+      - 기본 속성값이 'on'
+      - 속성값을 'off'로 변경: 자동 완성 기능 꺼짐
+  -->
+
+  <!--
+    폼 요소 그룹화 및 레이블 적용
+    fieldset, legend 태그
+    : 폼 요소를 그룹으로 묶는 태그
+
+    fieldset 태그: 하나의 폼 안에서 여러 구역을 나누어 표시
+    legend 태그: fieldset으로 묶은 그룹의 제목을 붙이는 태그
+    -->
+
+  <form action="">
+    안녕하세요
+    <fieldset>
+      <legend>상품 구매</legend>
+      <label for="id">구매자 아이디</label>
+      <input type="text" id="id" />
+      <br />
+      <label for="password">구매자 패스워드</label>
+      <input type="password" id="password" />
+      <br />
+    </fieldset>
+  </form>
+
+</body>
+</html>

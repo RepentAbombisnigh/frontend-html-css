@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 복습</title>
+</head>
+<body>
+  <!-- 시멘틱 태그 
+    header, main, footer
+  
+    head태그: h1, nav태그(5개의 a태그)
+
+    main태그: 6개의 section
+    section01: img 3개(practice 폴더 내에 image 저장)
+    section02: About Us(h2, p태그)
+    section03: Misson statement (h2, p태그)
+    section04: Service (h2, 순서가 있는 태그)
+    section05: Our Team (h2, 순서가 없는 태그, img태그)
+    section06: Contact Us(h2, p, a태그)
+
+    footer태그: p, a태그
+
+    vertical bar = shift + \
+  -->
+
+  <header>
+    <h1>웹 프론트엔드의 시작</h1>
+    <nav>
+      <!-- a태그 수신처에 #입력 시 웹 문서 주소 그대로를 사용 -->
+      <a href="#">Home</a> |
+      <a href="#">About Us</a> |
+      <a href="#">Mission statement</a> |
+      <a href="#">Service</a> |
+      <a href="#">Our team</a> |
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <img src="images/1.png" alt="" width="120px">
+      <img src="images/2.png" alt="" width="120px">
+      <img src="images/3.png" alt="" width="120px">
+    </section>
+    <section>
+      <h2><a href="">About Us</a></h2>
+      <p>We are a leading company in our industry.</p>
+    </section>
+    <section>
+      <h2><a href="">Mission statement</a></h2>
+      <p>
+        To provide the best service to our clients
+      </p>
+    </section>
+    <section>
+      <h2><a href="">Services</a></h2>
+      <ol type="A">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ol>
+    </section>
+    <section>
+      <h2><a href="">Our Team</a></h2>
+      <ul>
+        <li><img src="images/5.png" alt="" width="50px" height="130"> 12, 34</li>
+        <li><img src="images/6.png" alt="" width="50px" height="130"> 23, 45</li>
+      </ul>
+    </section>
+    <section>
+      <h2> <a href="">Contact Us</a></h2>
+      <p>address</p>
+      <p>email <a href="https://">asdjdasjnads@gmail.com</a></p>
+      <p>phone number</p>
+    </section>
+    <footer>
+      <!-- &copy; 엠퍼샌드 -->
+      <p>&copy; 2000 company established</p>
+      <a href="https://">Twitter</a> |
+      <a href="https://">Facebook</a>
+    </footer>
+  </main>
+</body>
+</html>

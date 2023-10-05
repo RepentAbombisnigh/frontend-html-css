@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>search & URL % email & tel</title>
+</head>
+<body>
+  <!-- 
+    !search: 검색을 위한 텍스트 필드
+    모바일 기기 내 웹 브라우저에서 해당 필드의 검색어를 입력하면, 오른쪽에 X자 표시가 나타남(기록 삭제 등)
+      : 검색어를 쉽게 지우는 것을 가능하게 하는 기능
+
+    url: 웹 주소를 입력하는 필드
+
+    !email: 이메일 주소를 입력하는 필드
+    - 입력값이 지정한 형식에 맞지 않을 경우, 웹 브라우저에서 오류 메세지를 출력
+
+    tel: 전화번호를 나타내는 필드 
+  -->
+
+<ul>
+  배송 정보
+  <li>
+    <!--
+      for 속성: 해당 label이 설명하고 있는 input 태그를 명시적으로 지정
+      - 속성의 값은 연결하려는 input 태그의 id속성 값과 일치해야 한다.
+      
+      id 속성: 해당 input 필드를 고유하게 식별하는 값
+      - label의  for 속성값과 일치하는 input의 id값이 있을 경우, 해당 label을 클릭시 자동으로 연결된 input 필드가 활성화
+      
+      라벨인 상품 검색을 클릭해도 텍스트 필드가 활성화 됌, 작은 기기 사용에도 활성화할 여유 공간이 커지니 사용자 활용성은 높음
+    -->
+    <label for="search-item">상품 검색 </label>
+    <input type="search" id="search-item" /> 
+
+  </li>
+  <li>
+    <label for="commend-stie">상품 구매 추천 사이트 </label>
+    <input type="url" id="commend-stie" />
+  </li>
+  <li>
+    <label for="email">구매자 이메일</label>
+    <input type="email" id="email" />
+  </li>
+  <li>
+    <label for="phone">구매자 연락처 </label>
+    <input type="tel" id="phone" />
+  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form tag practice</title>
+</head>
+<body>
+  <h1>롯데 자이언츠 선수단 응원메세지 이벤트</h1>
+  <form>
+    <fieldset>
+      <legend>선수단을 응원하고 경품 받자</legend>
+        <ul>
+          <li>
+            <label for="userId">아이디</label>
+            <input type="text" id="userId" placeholder="4자 ~ 10자 사이, 공백없이" minlength="4" maxlength="10" autofocus required />
+          </li>
+          <li>
+            <label for="useremail">이메일</label>
+            <input type="email" id="useremail" required />
+          </li>
+          <li>
+            <label for="giftlist">경품 목록</label>
+            <select name="giftlist" id="giftlist">
+              <option value="1">선수단 사인볼</option>
+              <option value="2">홈 레플리카 유니폼</option>
+              <option value="3">C Uniform</option>
+              <option value="4">D Uniform</option>
+              <option value="5">E Uniform</option>
+            </select>
+          </li>
+          <li>
+            <label for="memo">메모</label>
+            <textarea cols="40" rows="4" id="memo" placeholder="1231212412"></textarea>
+          </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>이벤트 결과와 새로운 소식</legend>
+      <input type="radio" name="mailing" id="agree">
+      <label for="agree">메일 수신</label>
+      <input type="radio" name="mailing" id="disagree">
+      <label for="disagree">메일 수신 안 함</label>
+    </fieldset>
+
+    <div>
+      <input type="submit" value="이벤트 신청하기">
+      <input type="reset" value="취소">
+    </div>
+
+      <!-- or -->
+
+    <div>
+      <button type="submit">이벤트 신청하기</button>
+      <button type="reset">취소</button>
+    </div>
+
+  </form>
+</body>
+</html>

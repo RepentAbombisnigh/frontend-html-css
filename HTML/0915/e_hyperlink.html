@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 하이퍼링크
+  </title>
+</head>
+<body>
+  <h1>a태그 & href속성</h1>
+  <p>
+    a태그: 링크를 삽입하는 태그
+    - 입력값에 따라 텍스트 링크, 이미지 링크 등으로 사용 가능
+    - 마우스를 링크 위로 이동하면 마우스 화살표가 작은 손으로 변경
+
+    href속성: 링크의 수신처를 입력
+  </p>
+  <a href="링크할 주소">텍스트 또는 이미지</a>
+
+  <p>텍스트 링크</p>
+  <a href="https://naver.com">네이버 바로가기</a>
+  - 텍스트에 링크 추가 시
+  : 밑줄이 생기고 글자색이 검은색에서 파란색으로 변경
+  : 방문하지 않은 링크는 파란색
+  : 한 번이라도 클릭한 경우 자주색으로 변경
+
+  <p>이미지 링크</p>
+  <a href="https://naver.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAADGCAMAAADFYc2jAAAAbFBMVEUAxzz///8AxjYAwiDy/fYtyk8AxDBQ0Gb6//zV9d5m1nwAwiWF35oyzlgAxC3a9uJP024AwBFHz2FW0WrN9Nno/PDi+Oh424up6Lae5a0YxTgsy0uY5KrF8M+E3pQ9zFRv2IO47cVa1HNs2ICo2/skAAAB+0lEQVR4nO3b3U7CMBiA4f5ZYJPhwPGzgQje/z0aIzFt2cKJC9Dvfc7IN5q8aQMEhlIAAAAAAAAAAAAAAAAAAAAAAADA0zJjunfcTWa5moxmde+6m+z71I2meXn0/bczPR5H/mMjn3zyySeffPLJJ5988sknn3zyySeffPLJzzi/WURmLh6v4/E6t/xX2wY/VrXlJh6/VcG49fPs8svkum2SHw7zzze+ifJ9OMw/X1WF6Hxld6LzTRu8vsvLV34pOj88/hLzlf+7WGZ+Jzpf1XvR+coeROf741Ryvio/ROdfjr/YfH90kvNVWYjOV/VJdL7pGnH5YUd1lpbfdWGIPRSivuwyatZGT5tHXbnnq0rv6+Bh8keF/POdnlcDS8jIT45/SEK+3tUDa8jI18XQ8ZeRv24HamTk663tXyT3fPObrz8HvgTJPP+y+9rZ3h4p+frUu/1i8vuPv5x81/UUycnXh57tF5SvN9fvfpLy3dKni+Seb4J8fbj67J97frj7P3d9JYvIyneT5Pjnnh8dfq0XyfHPL/+jrgKlje/q3NlwWtmuf5HnzW9msXg6TaaL3PL/Bfn37ruBfPLJJ5988sknn3zyySeffPLJJ5988sknP4/86VieIN+cv4rx3LvuNj+i4ZugAQAAAAAAAAAAAAAAAAAAAAAAgEf3DYaTRGSI8YZpAAAAAElFTkSuQmCC" alt="네이버 바로가기"></a>
+
+  <h2>하이퍼링크의 target속성</h2>
+  - 링크를 새탭에서 열어주는 속성: 연결된 문서를 열 위치를 지정 <br />
+  <p>
+    _self: 디폴트: 작업중인 창에서 링크 주소로 이동
+    _blank: 새 창/탭에서 문서를 활성
+
+    <!-- 프레임셋을 사용하는 페이지에서 작동하는 속성값이며 HTML4까지만 사용하던 기능 -->
+    _parent: 상위 프레임에서 문서를 활성
+    _top: 창 전체의 본문에서 문서를 활성
+  </p>
+  
+  <a href="https://www.giantsclub.com/html/index.asp?" target="_self">롯데 자이언츠_self</a> <br />
+  <a href="https://www.giantsclub.com/html/index.asp?" target="_blank">롯데 자이언츠_blank</a> <br />
+  <a href="https://www.giantsclub.com/html/index.asp?" target="_parent">롯데 자이언츠_parent</a> <br />
+  <a href="https://www.giantsclub.com/html/index.asp?" target="_top">롯데 자이언츠_top</a> <br />
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 테이블</title>
+  <style>
+    tbale, th, td {
+      border: 1px solid #111;
+      border-collapse: collapse;
+    }
+    th, td {padding: 10px, 20px}
+  </style>
+</head>
+<body>
+  <h1>HTML Table</h1>
+  <ul>
+    <li>
+      1. 테이블(표)
+      : 행(row)과 열(column) 그리고 셀(cell)로 이루어짐
+    </li>
+    <li>
+      행(row): 가로 / 열(column): 세로
+    </li>
+    <li>
+      셀(cell): 표의 내용이 들어가는 한 칸을 의미
+    </li>
+  </ul>
+    <h2>table태그, caption태그</h2>
+    <table></table>
+      표를 만드는 태그, 표를 생성
+      <caption></caption>
+        표의 제목 또는 설명을 삽입<br />
+        - 제목이 표의 위쪽 중앙에 표시<br />
+        - 선택적 항목, 주로 스크린 리더 사용자를 위해 작성
+      
+    <h2>tr, td, th 태그</h2>
+    th태그: table header(테이블의 제목 셀, 기본적으로 굵은 글씨)<br />
+    tr태그: table row(각 행) <br />
+    td태그: table data(일반적인 테이블 셀) <br />
+    # table태그 작성만으로 표 생성 X <br />
+      - 태그 안의 행과 각 행의 셀의 갯수를 지정 <br />
+      - 또한 head태그에 style로 설정을 해줘야 나옴 <br />
+      <br />
+  <table>
+    <caption>첫 테이블 생성</caption>
+    <tr> <!-- 첫 번쨰 행(2개의 셀을 지정) -->
+      <td>1행 1열</td>
+      <td>1행 2열</td>
+    </tr>
+    <tr> <!-- 두 번째 행(2개의 셀을 지정)  -->
+      <td>2행 1열</td>
+      <td>2행 2열</td>
+    </tr>
+  </table>
+
+
+  <h2>표의 구조를 지정하는 태그</h2>
+  <ul>
+    <li>
+      thead(제목), tbody(내용), tfoot(요약) 태그
+    </li>
+    <li>
+      표의 구조를 지정할 경우
+      시각 장애인도 화면 낭독기를 통해 표를 쉽게 이해 가능
+    </li>
+    <li>
+      CSS 사용하여 각각 다른 스타일 적용 가능
+    </li>
+    <li>
+      테이블 구조 사용전후에 눈에 보여지는 테이블은 동일하지만 화면 낭독기나 컴퓨터 프로그램이 인지하는 구조가 달라진다. 
+    </li>
+  </ul>
+
+  <h2>테이블 병합</h2>
+  <p>
+    rowspan, colsapn 속성을 사용하여 행이나 열을 병합
+    rowspan: 행 병합
+    colspan: 열 병합
+  </p>
+
+  <p>
+    rowspan속성 <br />
+    : 특정 셀이 여러 행에 걸쳐 확장되어야 할 떄 사용 <br />
+    : rowspan="2" 적용 시 해당 셀이 아래족으로 2행만큼 확장
+    <!-- 병합 적용시 아래에 있거나 오른쪽에 있는 셀들을 제거를 하거나 주석 처리로 생략해야 원하는 확장이 가능 -->
+  </p>
+
+  <table>
+    <tr>
+      <td rowspan="2">이 셀은 2행에 걸쳐 확장됩니다</td>
+      <td>일반 셀</td>
+    </tr>
+    <tr>
+      <!-- <td>두 번째 행의 첫 번째 셀</td> 91번쨰 줄의 rowspan으로 깔끔하게 주석처리--> 
+      <td>두 번째 행의 두 번째 셀</td>
+    </tr>
+  </table>
+
+  <p>
+    colspan속성 <br />
+    : 특정 셀이 여러 열에 걸쳐 확장되어야 할 때 사용
+  </p>
+
+  <table>
+    <tr>
+      <td colspan="2">이 셀은 2열에 걸쳐 확장됩니다</td>
+      <!-- <td>일반 셀</td> 107줄의 colspan으로 깔끔하게 주석처리-->
+    </tr>
+    <tr>
+      <td>첫 번쨰 열의 셀</td>
+      <td>두 번쨰 열의 셀</td>
+    </tr>
+  </table>
+</body>
+</html>
