@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles/d_text.css">
 </head>
 <body>
+
   <!--
     ! 1. text-decoration 속성: 텍스트의 줄을 표시 | 제거, 하이퍼링크 적용할 때 기본적으로 생기는 밑줄을 제거
     속성값
@@ -16,9 +17,60 @@
       ? line-through0
   -->
 
+  <h2>Text decoration</h2>
   <a href="#">text-decoration - none</a>
   <p class="underline">text-decoration - underline</p>
   <p class="overline">text-decoration - overline</p>
   <p class="line-through">text-decoration - line-through</p>
+
+  
+  <!--
+    ! 2. text-shadow 속성: 텍스트에 그림자 효과를 추가, 사이트 제목처럼 강조해야 할 글자에 사용 
+    속성값
+      ? 가로거리
+    : 필수 속성, 양숫값: 글자의 오른쪽, 음숫값: 글자의 왼쪽
+      ? 세로거리
+    : 필수 속성, 양숫값: 글자의 아래쪽, 음숫값: 글자의 위쪽 생성
+      ? 번짐정도
+    : 양숫값: 모든 방향으로 퍼져나감(크게 표시)
+    : 음숫값: 그림자가 모든 방향으로 축소되어 표시
+    : 기본값 - 0
+      ? 색상
+    : 한 가지 또는 공백을 두고 여러 색상 지정 가능
+    : 기본값 - 현재 글자색  
+  -->
+
+  <h2>Text shadow</h2>
+  <p class="shadow-basic">text shadow 1</p>
+  <p class="shadow-reverse">text shadow 2</p>
+  
+  <button>Text shadow 3</button>
+
+  <!-- 
+    ! 3. text-transform 속성: 영문자 표기 시 텍스트의 대소문자 변경, 한글 X 영문자만
+  속성 값
+    ? none 기본 값 (변환X)
+    ? capitalize: 첫 번쨰 글자를 대문자로 변환
+    ? uppercase: 모든 글자를 대문자로 변환
+    ? lowercase: 모든 글자를 소문자로 변환
+    ? full-width: 가능한 한 모든 문자를 전각 문자(가로와 세로 길이 비율이 동일)로 변환 
+  -->
+
+  <h2>Text transform</h2>
+  <p class="capitalize">Hello this is ...</p>
+  <p class="uppercase">Hello this is ...</p>
+  <p class="lowercase">Hello this is ...</p>
+  <p class="full-width">Hello this is ...</p>
+
+  <!--
+    ! 4. letter-spacing, word-spacing: 글자 간격을 조정
+    ? letter-spacing(글자와 글자 사이 간격)
+    ? word-spacing(단어와 단어 사이 간격)
+    >> 음숫값 사용 시 간격 축소
+  -->
+
+  <h2>Spacing</h2>
+  <p class="letter-spacing">Hello this is ...</p>
+  <p class="word-spacing">Hello this is ...</p>
 </body>
 </html>
