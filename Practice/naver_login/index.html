@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네이버 로그인 클론코딩</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="font">
+  <div>
+    <a href="https://naver.com" class="header1">본문 바로가기</a>
+  </div>
+  <header class="header2">
+    <div><a href="https://naver.com" alt="logo">
+        <h1>NAVER</h1>
+      </a>
+      <div>
+        <label for="lang" id="localeswitch"></label>
+        <select name="locale_Switch" id="localeswitch">
+          <option value="ko_KR">한국어</option>
+          <option value="en_US">English</option>
+          <option value="zh_CN">中文(简体)</option>
+          <option value="zh_TW">中文(台灣)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <ul>
+    <li><a
+        href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1"
+        class="visited">ID
+        로그인</a></li>
+    <li><a
+        href="https://nid.naver.com/nidlogin.login?mode=number&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1"
+        class="visited">일회용
+        번호</a></li>
+    <li><a
+        href="https://nid.naver.com/nidlogin.login?mode=qrcode&url=https%3A%2F%2Fwww.naver.com%2F&locale=ko_KR&svctype=1"
+        class="visited">QR코드</a><br />
+      PC방 등 공용PC라면 QR코드 로그인이 더 안전해요.<button></button></li>
+  </ul>
+  <div>
+    <form action="post">
+      <ul>
+        <li>아이디<br />
+          <label for="userID"></label>
+          <input type="ID" autofocus required placeholder="아이디" id="userID" /><br />
+          비밀번호<br />
+          <label for="userPass"></label>
+          <input type="password" required placeholder="비밀번호" id="userPass" />
+          <input type="reset" value="삭제" class="reset" /><br />
+        </li>
+        <input type="checkbox" name="" id="" />로그인 상태 유지<br />
+        <a href="https://nid.naver.com/login/ext/help_ip3.html" class="visited">IP보안</a>
+        <input type="checkbox" name="" id="" />off<br />
+        <strong>CapsLock</strong>이 켜져 있습니다.<br />
+        <strong>아이디</strong>를 입력해 주세요.<br />
+        <strong>비밀번호</strong>를 입력해 주세요.<br />
+        <input type="submit" value="로그인">
+      </ul>
+    </form>
+  </div>
+  <div>
+    <ul>
+      <li> <a href="https://nid.naver.com/user2/help/pwInquiry?lang=ko_KR" class="visited">비밀번호 찾기</a></li>
+      <li><a href="https://nid.naver.com/user2/help/idInquiry?lang=ko_KR" class="visited">아이디 찾기</a></li>
+      <li><a href="https://nid.naver.com/user2/join/agree?lang=ko_KR&domain=www.naver.com" class="visited">회원가입</a></li>
+      </li>
+    </ul>
+  </div>
+  <a href=""> <img src="images/farmer.jfif" alt="소상공인 응원하는 경북 먹거리 펀딩" width="35%"></a>
+  <ul>
+    <li><a href="https://policy.naver.com/rules/service.html" class="visited">이용약관</a></li>
+    <li><a href="https://policy.naver.com/rules/privacy.html" class="visited"><strong>개인정보처리방침</strong></a></li>
+    <li><a href="https://policy.naver.com/rules/disclaimer.html" class="visited">책임의 한계와 법적고지</a></li>
+    <li><a href="https://help.naver.com/service/5640/category/bookmark?lang=ko" class="visited">회원정보 고객센터</a></li>
+  </ul>
+</body>
+
+<footer>
+  <a href="https://www.navercorp.com/" class="visited">네이버</a> Copyright © NAVER Corp. All Rights Reserved.<br />
+  20
+</footer>
+
+</html>
