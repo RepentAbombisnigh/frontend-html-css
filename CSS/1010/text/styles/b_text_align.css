@@ -1,0 +1,18 @@
+p {
+  width: 400px;
+  border: 1px solid #000000;
+  padding: 1px;
+  margin: 1px;
+}
+
+.right {
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
