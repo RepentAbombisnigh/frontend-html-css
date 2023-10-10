@@ -1,0 +1,16 @@
+h2,
+a {
+  color: darkblue;
+}
+
+input {
+  height: 3em;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+textarea {
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
