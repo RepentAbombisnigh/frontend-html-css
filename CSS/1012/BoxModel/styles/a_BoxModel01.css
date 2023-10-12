@@ -1,0 +1,11 @@
+body * {
+  width: 300px;
+  border: 1px solid blue;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+  width: 350px;
+  height: 350px;
+}

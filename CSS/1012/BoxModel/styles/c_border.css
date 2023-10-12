@@ -1,0 +1,59 @@
+.width {
+  width: 200px;
+  height: 100px;
+  margin: 15px;
+  border-style: solid;
+}
+
+/* 1개 값 지정시 전체 방향 지정 */
+#all {
+  border-width: 2px;
+}
+
+/* 3개 값 지정시, 첫 번쨰 값: top, 두 번쨰: right left, 세 번쨰: bottom */
+#three {
+  border-width: 4px 8px 12px;
+}
+
+/* 2개 값 지정시, 첫 번쨰 값: 상하, 두 번쨰 값: 좌우 */
+#reverse {
+  border-width: thick thin;
+}
+/* 각각 네 방향 모두 지정 */
+#one {
+  border-width: 10px 1px 15px 5px;
+}
+
+/* border radius */
+#round {
+  border-radius: 25px;
+}
+
+#circle {
+  border-radius: 50%;
+}
+
+.radius {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin: 15px;
+  background-color: aliceblue;
+  border: 2px solid #222;
+}
+/* 똑같은 크기로 라운딩 가로 50px, 세로 30px */
+.round1 {
+  border-radius: 50px 30px;
+}
+/* 오른쪽 아래 꼭짓점을 가로 50px, 세로 30% */
+.round2 {
+  border-bottom-right-radius: 50px 30%;
+}
+/* 왼쪽 위 꼭짓점을 가로 50px, 세로 30px */
+.round3 {
+  border-top-left-radius: 50px 30px;
+}
+/* 왼쪽 아래 꼭짓점을 30px로 라운딩: 값이 하나 뿐이면 가로 세로 똑같이 30px로 라운딩 됌. */
+.round4 {
+  border-bottom-left-radius: 30px;
+}

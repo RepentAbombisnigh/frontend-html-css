@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Border</title>
+  <link rel="stylesheet" href="styles/c_border.css">
+</head>
+<body>
+  <!--  
+    ! 박스 모델의 방향: 테두리, 마진, 패딩을 지정할 떄 상하좌우 4개의 방향을 똑같이 지정하거나, 모두 다르게 지정 가능
+    ? 순서: TRBL (Top -> Right -> Bottom -> Left)
+
+    border: 테두리
+    ! border: style, width, color 속성 같이 사용 가능 
+
+
+    width 크기 지정의 경우: 단위 사용한 지정 | 예약어 사용 지정
+      ? thin, medium, thick
+
+    
+    !border-radius: 둥근 테두리 지정, 박스 모델의 꼭짓점 부분에 원이 있다고 가정하여 둥글게 처리
+      ? 크기, 백분율
+        > 50% allows to render a proper circle shape and higher percents doesnt really render any different 
+  
+  -->
+
+
+
+  <!-- 네 방향 모두 한 번에 지정 -->
+  <div id="all" class="width"></div>
+  <!-- top bottom 각각 지정 right left 동시 지정-->
+  <div id="three" class="width"></div>
+  <!-- top&bottom 같이, left&right 각각 반전 동시 지정 -->
+  <div id="reverse" class="width"></div>
+  <!-- 전체 4가지 각각 지정 -->
+  <div id="one" class="width"></div>
+
+  <hr />
+
+  <img src="../../../HTML/images/images-folder.jpg" alt="강아지" width="200px" />
+  <img id="round" src="../../../HTML/images/images-folder.jpg" alt="강아지" width="200px" />
+  <img id="circle" src="../../../HTML/images/images-folder.jpg" alt="강아지" width="200px" />
+
+  <hr />
+
+  <!--  
+    꼭짓점 타원 만들기: 가로 반지름과 세로 반지름 사이에 /를 넣어서 구분
+    : 특정 꼭짓점만 타원형태로 지정시 border-위치-radius 가로반지름 세로반지름;
+  -->
+
+  <div class="radius round1"></div>
+  <div class="radius round2"></div>
+  <div class="radius round3"></div>
+  <div class="radius round4"></div>
+
+
+</body>
+</html>
