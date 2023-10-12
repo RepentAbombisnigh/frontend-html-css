@@ -1,0 +1,20 @@
+/* ul {
+  list-style-type: square;
+} */
+
+ol {
+  list-style-type: decimal-leading-zero;
+}
+
+.ul-image
+{
+  list-style-image: url(../../../../HTML/diff-directory.jpg);
+}
+
+.ul-position {
+  list-style-position: inside;
+}
+
+ul {
+  list-style: square inside;
+}

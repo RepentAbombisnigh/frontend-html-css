@@ -72,5 +72,42 @@
   <h2>Spacing</h2>
   <p class="letter-spacing">Hello this is ...</p>
   <p class="word-spacing">Hello this is ...</p>
+
+  <!-- 
+    ! 5. text-indent: 텍스트 첫 줄을 들여쓰기
+      ? px, 백분율을 사용
+  -->
+
+  <h2>Text indent</h2>
+  <p class="pixel">Hello this is ...</p>
+  <p class="percent">Hello this is ...</p>
+
+  <!--
+    ! 6. white-space: 공백 처리
+      ? normal(default)
+      ? nowrap: 영역 너비를 넘어가는 줄을 계속 한 줄로 표시
+  -->
+
+  <h2>White space</h2>
+  <p class="nowrap">Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...</p>
+
+  <!--
+    ! 7. text-overflow: 넘치는 텍스트 표기
+    ! : white-space 속성이 nowrap이고, overflow 속성이 hidden, scroll, auto일 때 적용
+      ? clip: 넘치는 텍스트를 자름
+      ? ellipsis: 말 줄임표로 잘린 텍스트 표기
+    
+    ! overflow 속성: 요소의 크기(너비, 높이) 내에서 콘텐츠가 너무 많아 넘쳤을 때 어떻게 처리할지를 지정
+      ? visible(default)
+      ? hidden: 오버플로우된 콘텐츠가 잘림(scroll bar not provided)
+      ? scroll: 콘텐츠가 넘치지 않더라도 스크롤 바가 항상 표시
+      ? auto: 콘텐츠가 넘칠 때 스크롤 바가 표시
+  -->
+
+  <h2>Text overflow</h2>
+  <p class="overflow">Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...</p>
+  <p class="overflow2">Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...Hello this is ...</p>
+
+
 </body>
 </html>

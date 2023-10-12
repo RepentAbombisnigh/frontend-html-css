@@ -62,3 +62,27 @@ button {
 .word-spacing {
   word-spacing: 8px;
 }
+
+.pixel {
+  text-indent: 20px;
+}
+
+.percent {
+  text-indent: 20%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.overflow2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>목록 스타일</title>
+  <link rel="stylesheet" href="styles/a_list01.css">
+</head>
+
+<body>
+  <!--  
+    ! 1. list-style-type: ul 태그와 ol 태그 스타일을 지정
+      - 목록의 스타일 제거
+        ? none: 지정 x
+
+      - 순서 없는 ul 태그의 속성
+        ? disc: ●
+        ? circle: ○
+        ? square: ■
+
+      - 순서 있는 ol 태그의 속성
+        ? decimal: 10진수(1에서 시작)
+        ? decimal-leading-zero: 10진수이나 01로 표기(01, 02, 03)
+        ? lower-roman: 소문자 로마 숫자
+        ? upper-roman
+        ? lower-alpha, greek, latin
+
+    ! 2. list-style-iamge: 불릿 대신 이미지를 사용, 불릿 이미지는 불릿 크기만큼 줄여서 사용하는 것을 권장
+        ? url(img file address)
+        ? none: list-style-type 속성으로 표시
+
+    ! 3. list-style-position: 불릿이나 번호의 위치를 들여쓰기, 텍스트 문단 사이에 있는 목록을 더 쉽게 구분
+        ? inside: 불릿 | 번호가 실제 내용이 시작되는 위치보다 들여쓰기 효과 적용
+        ? outside: default
+
+    ! 4. list-style: 상위 목록 속성들을 한꺼번에 표시 가능
+    ? 하지만 CSS 특성 상 명확한 표기를 위해 개별로 하는 것이 낫다.
+  -->
+
+  <h2>순서 없는 ul 목록</h2>
+  <ul>
+    <li>Item 01</li>
+    <li class="disc">Item 02</li>
+    <li class="circle">Item 03</li>
+    <li class="square">Item 04</li>
+  </ul>
+
+  <h2>순서 있는 ol 목록</h2>
+  <ol>
+    <li>item 01</li>
+    <li>item 01</li>
+    <li>item 01</li>
+    <li>item 01</li>
+  </ol>
+
+  <h2>List style image</h2>
+  <ul class="ul-image">
+    <li>불릿 이미지 1</li>
+    <li>불릿 이미지 2</li>
+  </ul>
+
+  <h2>List style position</h2>
+  <p>Hello This is ... Let me introduce myself</p>
+  <ul class="ul-position">
+    <li>name: John Doe</li>
+    <li>job: Developer</li>
+  </ul>
+  <p>Nice to meet you</p>
+</body>
+</html>
