@@ -1,0 +1,24 @@
+h1 {
+  /* inline-block으로 강제 정렬 */
+  display: inline-block;
+  border: 1px solid #000000;
+  background-color: aquamarine;
+}
+
+#padding1 {
+  padding: 20px;
+}
+
+#padding2 {
+  padding: 10px 40px;
+}
+
+#padding3 {
+  padding: 20px 30px 40px 50px;
+}
+
+#padding4 {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

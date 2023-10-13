@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS margin collapse</title>
+  <link rel="stylesheet" href="styles/b_margin_collapse.css
+  ">
+</head>
+<body>
+  <!--  
+    ! margin-collapse (마진 중첩 | 마진 상쇄 현상): 주로 블록 레벨 요소에서 발생, 두 개 이상의 마진이 만나 적은 크기의 마진이 중복되는 현상
+      ? 수직 마진 중복: 두 개의 인접한 블록 레벨 요소의 위쪽 마진과 아래쪽 마진이 만나서 중복
+        : 아래의 예시에서 강아지 1과 강아지 2 사이의 여백이 60 x 30으로 서로 겹쳐짐.
+        >> 여러 요소를 세로 배치할 때, 맨 위의 마진과 맨 아래의 마진에 비해 중간에 있는 마진이 지나치게 커지는 것을 방지.
+        ^ 오른쪽 마진과 왼쪽 마진이 만날 경우 중첩X
+        ^ 마진 대신 각각의 요소에 padding을 적용하는 것도 방법.
+        ^ 중첩된 요소에 overflow: auto, hidden 적용해 마진 중복을 방지
+  -->
+
+  <h2>마진 중첩 현상</h2>
+  <div id="collpapse"><img src="../../../HTML/images/images-folder.jpg" /></div>
+  <div id="collpapse"><img src="../../../HTML/images/images-folder.jpg" /></div>
+  <div id="collpapse"><img src="../../../HTML/images/images-folder.jpg" /></div>
+</body>
+</html>

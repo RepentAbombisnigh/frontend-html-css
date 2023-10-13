@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #222222;
+  /* 블록 요소임에도 해당 요소로 강제 정렬 가능 */
+  display: inline-block;
+}
+
+#margin1 {
+  margin: 50px;
+}
+#margin2 {
+  margin: 30px 50px;
+}
+#margin3 {
+  margin: 30px 20px 50px;
+}
+#margin4 {
+  margin-top: 20px;
+}
+#margin5 {
+  margin-right: 30px;
+}
+/* 부모 요소 div에서 inline-block으로 강제 정렬 된 것을 flex 속성으로 풀었음. */
+#margin6 {
+  display: flex;
+  margin: 30px auto;
+}
+
+
+
