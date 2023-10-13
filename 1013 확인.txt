@@ -1,0 +1,5 @@
+1013 layout >> d_.html << devgiants
+            >> practice needs to be done by 15
+
+froggy game verification
+

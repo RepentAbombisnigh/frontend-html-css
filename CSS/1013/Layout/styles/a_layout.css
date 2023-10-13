@@ -1,0 +1,39 @@
+body {
+  width: 500px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+p {
+  background-color: rgb(255, 84, 104, 0.3);
+  border: 2px solid rgb(255, 84, 104);
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background-color: white;
+  border: 1px solid black;
+}
+
+img {
+  width: 100px;
+}
+
+/* 
+예시
+
+! body 태그 외의 다른 부분도 정렬될 수 있기에 body 태그
+body {
+  width: 500px;
+  margin: 0 auto;
+}
+
+! p 태그의 마진 중첩 현상이 일어났음.
+
+ */
