@@ -1,0 +1,83 @@
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: large;
+}
+
+.header-inner {
+  margin: 0 auto;
+  color: orange;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.str {
+  font-weight: bolder;
+}
+
+.nav-bar {
+  text-align: left;
+}
+
+.nav-bar-menu {
+  background-color: #555;
+  color: #fff;
+  margin: 0 auto;
+  padding: 0 10px 0 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 10px;
+}
+
+.sec {
+  padding: 10px 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 5px;
+  padding: 10px;
+  width: 99%;
+
+}
+
+tr,
+th {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  height: 1.5em;
+}
+
+.form-padding {
+  padding-top: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 2em;
+  padding: 5px;
+  margin: 5px 0 10px;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 1em;
+}
+
+input[type=textarea] {
+  width: 100%;
+  height: 4em;
+}
+
+input[type=submit] {
+  font-size: 18px;
+}
