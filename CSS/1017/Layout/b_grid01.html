@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid layout</title>
+  <link rel="stylesheet" href="styles/b_grid01.css">
+</head>
+<body>
+  <!--  
+    grid layout: 웹 페이지 배치를 위한 2차원 레이아웃 시스템
+
+    ! 1. 그리드 레이아웃: 수평선과 수직선으로 이루어진 집합체
+    
+    ! 2. Grid Container: 그리드 레이아웃 작성을 위해 그리드 컨테이너 정의 > 컨테이너 내의 자식 요소들이 그리드 아이템으로 적용
+      ? display: grid | inline-grid;
+        :display: grid 지정 시 한 열 그리드가 생성(일반 흐름: top to bottom)
+    
+    ! 3. Grid Item: 그리드 컨테이너 내부의 모든 직접적인(직계) 자식요소
+
+    ! 4. row * column : 그리드 레이아웃의 경우, 행과 열을 정의하고 그에 따라 아이템을 배치
+      ? row 정의: grid-template-rows: npx npx npx (원하는 row 수 만큼)
+      ? column 정의: grid-template-columns: npx npx npx (원하는 column 수 만큼)
+        : 길이 단위 또는 백분율 사용하여 열 트랙을 생성
+      
+      : fr단위를 사용한 가변 그리드
+        fr: 그리드 컨테이너에서 그리드 행과 열의 크기를 유연하게 조정할 수 있는 사용 가능한 공간 한 분율을 나타냄. (공간 비례하여 분배)
+      
+      fr 단위와 고정길이 단위를 혼합하여 사용시, 고정 트갤이 필요한 공간이 먼저 소진, 나머지 공간이 다른 트랙에 분배
+
+    ! 트랙 사이 간격: 길이 단위 | 백분율 지정 O, (fr X)
+      1. column-gap: 열 사이의 간격
+      2. row-gap: 행 사이의 간격
+      3. gap: 모든 행과 열의 간격
+      
+    ! 트랙 목록의 반복: repeat() 함수 사용 - 트랙 목록의 전체 | 일부 섹션만 반복  
+      ex. grid-template-columns: repeat(4, 100px)
+      함수의 첫 번쨰 값 = 목록을 반복할 횟수 지정
+            두 번쨰 값 = 트랙 목록의 크기
+
+  -->
+
+  <h1>Simple grid example</h1>
+
+  <div class="container">
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+    <div>six</div>
+    <div>seven</div>
+  </div>
+</body>
+</html>
