@@ -28,31 +28,21 @@
       ? space-between: first item은 container 시작 부분, last item은 끝 부분에 정렬되고 나머지는 동일한 공간으로 분배.
       ? space-evenly; first & last가 주위 공간과 같은 공간을 가지지만 잘 사용 x
 
+    ! order: flex item 순서를 정하는 속성값
+      ? flex item의 default order# = 0.
+      ? 순위값이 높은 felx item들은 디스플레이 순서상 순위값이 낮은 항목들보다 나중에 나타남.
+      ? 순위값이 동일한 항목의 경우 소스코드 순서대로 나열
+      ? 순위값을 매기지 않으면 0번과 동일하게 적용
+      ? negative value = forced 
+
   -->
 
   <div>
     <button id="self">button01</button>
-    <button >button02</button>
-    <button >button03</button>
-    <button >button04</button>
-    <button >button05</button>
+    <button id="btn2">button02</button>
+    <button id="btn3">button03</button>
+    <button id="btn4">button04</button>
+    <button id="btn5">button05</button>
   </div>
 
   <hr />
-
-  <!-- 
-    align-items: 한 줄을 기준으로 정렬(수직 축 라인을 기준으로 정렬)
-    align-content(수직 축 라인을 기준으로 두 줄 이상 일 때만 정렬): 두 줄부터 사용하는데 의미
-      : 두 줄의 flex-wrap: wrap;인 상태에서 사용해야함.
-  -->
-
-  <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
-  </div>
-</body>
-</html>

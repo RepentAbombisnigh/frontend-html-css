@@ -21,24 +21,21 @@ button {
 }
 
 #self {
-  align-self: flex-end;
+  /* 해당 콘텐츠를 기본 축의 가장자리에 위치 */
+  /* align-self: flex-end; */
+  order: 0;
 }
 
-/* align-content */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 300px;
-  border: 1px solid black;
-  align-content: space-between;
+#btn2 {
+  order: 2;
 }
 
-.item {
-  width: 90px;
-  height: 90px;
-  text-align: center;
-  line-height: 90px;
-  border: 1px solid black;
-  margin: 5px;
+#btn3 {
+  order: 4;
 }
+
+#btn4 {
+  order: 3;
+}
+
+

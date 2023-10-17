@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: purple;
+  color: white;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* 강사 */
+h1 {
+  text-align: center;
+  list-style: 100px;
+  color: white;
+  margin: 0;
+}
+
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+/* 강사 */
+/* section {
+  display: flex;
+} */
+
+
+article {
+  margin: 10px;
+  padding: 10px;
+  background-color: aqua;
+}
+
+/* 강사 */
+/* article {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 200px;
+} */
+
+
+.sec {
+  flex: 1 200px;
+}
+
+.sec3 {
+  flex: 3 200px;
+  display: flex;
+  flex-flow: column;
+}
+/* 강사 */
+/* .sec3 {
+  flex: 3 200px;
+  display: flex;
+  flex-flow: column;
+} */
+
+/* button {
+  margin: 5px auto;
+  padding: 5px;
+  width: 24%;
+  align-content: center;
+} */
+
+#btn {
+  flex: 1 100px;
+  /* 해당 div 내부를 플렉스 컨테이너 지정, 방향을 row설정, 요소들이 넘칠떄 여러 줄로 배치 가능 */
+  /* div 요소 내부를 플렉스 컨테이너 지정 */
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+    justify-content: space-around; 
+}
+
+
+
+/* 강사 */
+button {
+  /* 브라우저 창의 폭 조절 시 최대한 공간을 점유, 동일 선상에 간으한 한 많은 요소를 배치 */
+  flex: 1 auto;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#lbtn {
+  width: 100%;
+  margin: 3 auto;
+}
