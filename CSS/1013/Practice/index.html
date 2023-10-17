@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML & CSS 복습</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  
+  <div class="header">
+    <div class="header-inner str">
+      <h1>Welcome to My Website</h1>
+    </div>
+  </div>
+  <div class="nav">
+    <nav class="nav-bar">
+      <ul class="nav-bar-menu">
+        <li><a href="#">Section 1</a></li>
+        <li><a href="#">Section 2</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sections-wrapper">
+    <div class="section1-wrapper">
+      <div class="sec str">Section 1</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+          </tr>
+          <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+          </tr>
+        </thead>
+      </table>
+      <img src="http://placehold.it/150/" alt="sec1_img" />
+    </div>
+    <div class="section2-wrapper">
+      <div class="sec str">Section 2</div>
+      <img src="150x150.jpg" alt="Example image" />
+    </div>
+  </div>
+  <div class="form-wrapper">
+    <form class="form-padding">
+      <fieldset>
+        <legend class="form-visual-outer-box">Personal Information</legend>
+        <div class="to_submit">
+          <div class="type-wrapper">
+            <div class="username-wrapper">
+              <label for="userName">Name:</label><br />
+              <input type="text" id="userName" name="userName" required autofocus />
+              <br />
+            </div>
+            <div class="password-wrapper">
+              <label for="pass">Password:</label><br />
+              <input type="password" id="pass" name="pass" required />
+              <br />
+            </div>
+          </div>
+          <div class="email-wrapper">
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+            <br />
+          </div>
+          <div survey-wrapper>
+            <div class="survey-text">
+              <label for="survey">Do you like this form?</label>
+            </div>
+            <div class="checkbox">
+              <input type="radio" value="sur_yes" name="survey" required />Yes<br />
+              <input type="radio" value="sur_no" name="survey" />No<br />
+            </div>
+          </div>
+          <div class="comment-wrapper">
+            <label for="comment">Comments:</label>
+            <input type="textarea" />
+          </div>
+        </div>
+        <div class="sumbit-button">
+          <input type="Submit" value="Submit" />
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </body>
+
 </html>
