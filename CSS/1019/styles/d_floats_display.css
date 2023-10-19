@@ -1,0 +1,76 @@
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+.box {
+  /* 요소를 왼쪽 float 설정 */
+  float: left;
+  margin-right: 10px;
+
+  width: 150px;
+  height: 150px;
+  background-color: rgb(80, 148, 207);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.special {
+  background-color: rgb(99, 185, 225);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cleared {
+  /* clear를 통해 옆으로 파고 들어가던 p 태그를 해제 */
+  clear: left;
+}
+
+
+/* display 속성 예제 */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  /* 인라인 & 블록 레벨 요소 모두 지정 */
+  display: inline-block;
+  border: 1px solid #222222;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+
+/* inline-flex 예제 */
+/* 페이지에서 인라인 요소처럼 나타나면서 내부의 버튼들은 플렉스 아이템처럼 동작 */
+.menu {
+  display: inline-flex;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.menu-item {
+  margin: 0 10px;
+}
+
+/* inline-grid 예제 */
+.widget {
+  display: inline-grid;
+  /* 해당 행과 열의 크기를 아이템 크기에 맞춰 자동 설정 */
+  grid-template-columns: auto auto;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.text {
+  font-size: 20px;
+}

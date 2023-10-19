@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Floats & display</title>
+  <link rel="stylesheet" href="styles/d_floats_display.css">
+</head>
+<body>
+  <!--  
+    ! float 속성 = legacy (flex와 grid로 대체됌)
+      : 왼쪽 | 오른쪽으로 배치하는 방법 (주로 신문 처럼 글 내에 이미지가 있어야 하고 이미지 옆에서부터 글이 나열되어야 하는 경우)
+      : p 태그와 같은 텍스트의 왼쪽이나 오른쪽에 이미지를 나란히 표시해야 하는 경우 사용
+        ? left: 해당 요소를 문서의 왼쪽에 배치
+        ? right: 해당 요소를 오른쪽에 배치
+        ? none(default): 좌우 어느 쪽에도 배치 X
+      : 가로 배치 (default) 로 요소에 기본 마진과 패딩 부여 되지 않는다. >> 기본적으로 왼쪽 float 설정 시, margin-right으로 지정 | 우측 설정시 margin-left
+
+    ! clear 속성
+      : float 속성을 해제
+      : float 속성 사용 시 웹의 요소를 왼쪽 | 오른쪽 배치 시 > 그 다음에 넣는 다른 요소에도 똑같이 적용
+      : float 속성을 더 이상 유용하지 않도록 설정
+        ? left - float: left 해제
+        ? right - float: right 해제
+        ? both - float: left 와 right 해제
+
+
+    ! display 속성
+      : 요소가 웹 페이지에서 어떻게 표시된는지를 결정
+      : 각 값에 따라 요소의 레이아웃과 동작이 달라짐
+        ? block
+          : 인라인 레벨 요소를 블록 레벨 요소로 전환
+        ? inline
+          : 블록 레벨 요소를 인라인 레벨 요소로 전환
+        ? inline-block
+          : 인라인 레벨 요소와 블록 레벨 요소 속성을 모두 가짐.
+            - inline처럼 새로운 줄 시작 X, block처럼 지정된 가로 세로 크기, margin padding 등을 지정 가능
+            - 수평 정렬된 메뉴(nav)나 버튼 목록을 만들 때 사용
+            - 요소 사이에 공백이 기본 지정하나 필요 없을 시 margin padding 0 명령으로 공백 없앨 수 있음
+        ? flex(inline-flex)
+          : inline-flex는 flex 속성을 갖지만 인라인 요소처럼 동작
+            - flex container 내에서 인라인 요소로 배치
+            - 자식 요소들은 flex item으로 유연성 있게 배치
+        ? grid(inline-grid)
+          : inline-grid는 grid 속성을 갖지만 인라인 요소처럼 동작
+
+  -->
+  
+  <h1>간단한 float 예제</h1>
+
+  <div class="box">float</div>
+  <p class="special">
+    This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position.
+  </p>
+  <p class="cleared">
+    This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// 
+  </p>
+  <p>
+    This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// This is chapter 02. Shortstop should have excellent quicklness and excellent throwing ability. And place a player with a wide range of defense and excellent sense in the shortsotp position. ///// 
+  </p>
+
+  <hr />
+
+  <h1>display 속성 예제</h1>
+  <nav>
+    <ul>
+      <li>menu 1</li>
+      <li>menu 2</li>
+      <li>menu 3</li>
+      <li>menu 4</li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- inline-flex 예제 -->
+
+  <div class="menu">
+    <button class="menu-item">Home</button>
+    <button class="menu-item">About</button>
+    <button class="menu-item">Contact</button>
+  </div>
+
+  <hr />
+  
+  <!-- inline-grid 예제 -->
+  <div class="widget">
+    <span class="icon">🚌</span>
+    <span class="text">bus</span>
+  </div>
+</body>
+</html>
