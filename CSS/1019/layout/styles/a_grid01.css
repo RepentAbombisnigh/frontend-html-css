@@ -1,0 +1,41 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  margin: 20px 20px;
+  /* 명시적 그리드 설정 */
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* auto-fit */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  /* 암시적 그리드 크기 지정 */
+  /* 최소 크기 100px, 최대 크기는 auto 지정 */
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+}
+
+.container > div, .grid-minmax > div {
+  border: 2px solid crimson;
+  border-radius: 5px;
+  background-color: aqua;
+  padding: 10px;
+}
+
+.two {
+  grid: 2fr;
+}
+
+/* minmax함수 사용 */
+.grid-minmax {
+  display: grid;
+  /* 그리드 개별 설정 */
+  /* grid-template-columns: minmax(100px, 300px) minmax(200px, 400px) minmax(50px, 150px); */
+
+  /* auto 사용한 그리드 설정 */
+  grid-template-columns: minmax(auto, 1fr) 2fr;
+} 
+
