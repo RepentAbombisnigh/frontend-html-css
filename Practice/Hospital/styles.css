@@ -1,0 +1,89 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.outcomes-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.mainrow {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
+}
+
+.maininner {
+  margin: 50px 0;
+}
+
+.upper-wrapper {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.maincol01 {
+  color: white;
+  padding: 30px;
+  width: 230px;
+  height: 230px;
+}
+
+.bgc01 {
+  background-color: lightblue;
+}
+
+.bgc02 {
+  background-color: rgb(61, 61, 255);
+}
+
+.bgc03 {
+  background-color: rgb(16, 135, 16);
+}
+
+.logbd {
+  border: 1px solid (61, 61, 255);
+  background-color: white;
+}
+
+.bgc04 {
+  background-color: aquamarine;
+}
+
+.bgc05 {
+  background-color: darkcyan;
+}
+
+.b {
+  font-weight: bold;
+}
+
+.b>ul>li>ul>li {
+  font-weight: 400;
+}
+
+.searchwrap {
+  width: 540px;
+  height: 260px;
+  background-image: url(/Practice/Hospital/images/bg_search2022_10_05.jpg);
+}
+
+.maincol02 {
+  color: white;
+  padding: 30px;
+  width: 230px;
+  height: 230px;
+}
