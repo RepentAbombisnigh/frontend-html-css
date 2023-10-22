@@ -9,36 +9,34 @@
 </head>
 
 <body>
-  <div class="main-wrapper">
-    <div class="header-wrapper">
-      <div class="outcomes-wrapper">
+  <div class="main-wrap">
+    <div class="header-wrap">
+      <div class="outcomes-wrap">
         <div class="outcomes">
           <a href="#">Outcomes</a>
         </div>
       </div>
-      <div class="mainhospital-wrapper">
+      <div class="mainhospital-wrap">
         <div class="mainhospital_link">
           <a href="#">mainhostital</a>
         </div>
       </div>
-      <div class="sidebars-wrapper">
-        <div>
-          <ul class="sidebar">
-            <li class="remote"><a href="#">원격</a></li>
-            <li class="login"><a href="#">로그인</a></li>
-            <li class="regi"><a href="#">회원가입</a></li>
-            <li class="langBtn"><a href="#">Language</a></li>
-            <ul>
-              <li class="en"><a href="#">English</a></li>
-              <li class="ch"><a href="#">Chinese</a></li>
-              <li class="ru"><a href="#">Pyccий</a></li>
-              <li class="mg"><a href="#">Монгол хэл</a></li>
-              <li class="ar"><a href="#">عرب؛ عربيّ</a></li>
-            </ul>
+      <div class="sidebars-wrap">
+        <ul class="sidebar">
+          <li class="remote"><a href="#">원격</a></li>
+          <li class="login"><a href="#">로그인</a></li>
+          <li class="regi"><a href="#">회원가입</a></li>
+          <li class="langBtn"><a href="#">Language</a></li>
+          <ul>
+            <li class="en"><a href="#">English</a></li>
+            <li class="ch"><a href="#">Chinese</a></li>
+            <li class="ru"><a href="#">Pyccий</a></li>
+            <li class="mg"><a href="#">Монгол хэл</a></li>
+            <li class="ar"><a href="#">عرب؛ عربيّ</a></li>
           </ul>
-        </div>
+        </ul>
       </div>
-      <div class="nav-wrapper">
+      <div class="nav-wrap">
         <nav>
           <button class="menu" type="button">전체 메뉴 열기</button>
           <ul class="navbar">
@@ -479,83 +477,75 @@
         </nav>
       </div>
     </div>
-    <!-- /header-wrapper -->
+    <!-- /header-wrap -->
     <div class="maincontents">
-      <div class="visual-wrapper">
+      <div class="visual-wrap">
         <div>
         </div>
       </div>
       <div class="maininner">
-        <div class="mainrow">
-          <div class="maincol01 bgc01">
-            <h2>진료예약</h2>
-            <p>빠르고 쉽게 진료예약을<br />
-              하실 수 있습니다.
-            </p>
-            <div class="btnwrap">
-              <a href="#">진료예약</a>
-              <a href="#">첫예약상담</a>
+        <div class="maintopwrap">
+          <div class="mainrow">
+            <div class="maincol01 bgc01">
+              <h3>진료예약</h3>
+              <p>빠르고 쉽게 진료예약을<br />
+                하실 수 있습니다.
+              </p>
+              <div class="btnwrap">
+                <a class="mainbtn01" href="#" role="button">진료예약</a>
+                <a class="mainbtn01" href="#" role="button">첫예약상담</a>
+              </div>
             </div>
-          </div>
-          <div class="maincol01 bgc02">
-            <h2>진료과/센터</h2>
-            <p>병원의 진료과 / 센터를<br />
-              상세히 확인할 수 있습니다.
-            </p>
-            <div class="btnwrap">
-              <a href="#">본원</a>
-              <a href="#">어린이병원</a>
-              <a href="#">암병원</a>
+            <div class="maincol01 bgc02">
+              <h3>진료과/센터</h3>
+              <p>병원의 진료과 / 센터를<br />
+                상세히 확인할 수 있습니다.
+              </p>
+              <div class="btnwrap">
+                <a class="mainbtn01" href="#" role="button">본원</a>
+                <a class="mainbtn01" href="#" role="button">어린이병원</a>
+                <a class="mainbtn01" href="#" role="button">암병원</a>
+              </div>
             </div>
-          </div>
-          <div class="maincol01 bgc03">
-            <h2>진료안내</h2>
-            <p>
-              대표전화<strong>1588-5700</strong><br />
-              암환자 상담 02-2072-0707
-            </p>
-            <div class="btnwrap">
-              <a href="#">외래진료안내</a>
-              <a href="#">진료시간표</a>
+            <div class="maincol01 bgc03">
+              <h3>진료안내</h3>
+              <p>
+                대표전화<strong class="indent">1588-5700</strong><br />
+                암환자 상담 02-2072-0707
+              </p>
+              <div class="btnwrap">
+                <a class="mainbtn01" href="#" role="button">외래진료안내</a>
+                <a class="mainbtn01" href="#" role="button">진료시간표</a>
+              </div>
             </div>
-          </div>
-          <div class="maincol01 logbd">
-            <div class="login-wrap">
-              <div class="reg-unreg">
-                <form name="loginform" id="loginform">
-                  <fieldset>
-                    <a href="#">로그인</a>
-                    <a href="#">비회원로그인</a>
-                    <legend>로그인</legend>
-                    <input type="text" name="id" placeholder="아이디/진찰권 번호" required />
-                    <input type="password" name="password" placeholder="비밀번호" required />
-                    </li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">아이디/비밀번호 찾기</a></li>
-                    <input type="submit" value="로그인" />
-                  </fieldset>
-                </form>
+            <div class="maincol01 logbd">
+              <div class="login-wrap">
+                <a href="#">로그인</a>
+                <span class="divider">|</span>
+                <a href="#">비회원로그인</a>
+                <input type="text" name="id" placeholder="아이디/진찰권 번호" required />
+                <input type="password" name="password" placeholder="비밀번호" required />
+                </li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">아이디/비밀번호 찾기</a></li>
+                <input type="submit" value="로그인" />
               </div>
             </div>
           </div>
-          <!-- /login-wrap -->
+          <!-- /mainrow -->
         </div>
-        <!-- /mainrow -->
+        <!-- /maininner -->
         <div class="mainrow">
           <div class="maincol02 searchwrap">
             <div class="fdoc">
-              <h2>의료진 찾기</h2>
+              <h3>의료진 찾기</h3>
               <p>
                 서울대학교병원의 의료진은<br />
                 환자를 위해 항상 노력하고 있습니다.
               </p>
               <div class="search">
-                <form class="fdoc_search">
-                  <fieldset>
-                    <input type="text" name="fdoc" placeholder="의료진/질병명 검색하기">
-                    <button type="submit">검색</button>
-                  </fieldset>
-                </form>
+                <input type="text" name="fdoc" placeholder="의료진/질병명 검색하기">
+                <button type="submit">검색</button>
               </div>
             </div>
           </div>
@@ -563,9 +553,13 @@
           <div class="maincol02 boardwrap">
             <ul class="tab">
               <li><a href="#">병원소식</a></li>
+              <span class="divider">|</span>
               <li><a href="#">채용</a></li>
+              <span class="divider">|</span>
               <li><a href="#">강좌</a></li>
+              <span class="divider">|</span>
               <li><a href="#">입찰</a></li>
+              <span class="divider">|</span>
               <li><a href="#">언론보도</a></li>
             </ul>
           </div>
@@ -574,11 +568,13 @@
         <!-- /mainrow -->
         <div class="mainrow">
           <div class="maincol02 hotissuewrap">
-            <h3>SNUH 핫이슈</h3>
+            <h3 class="b">SNUH 핫이슈</h3>
+            <img src="/Practice/Hospital/images/alssl.jpg" alt="알쓸수칙" width="100px" height="150px">
+            <h2 class="b">알아두면 쓸데있는 개인정보보호 수칙</h2>
+            <span>
+              정보보호 생활화를 위해 이용자가 반드시 기억해야 할 '보안 수칙'을 짚어보겠습니다.
+            </span>
           </div>
-        </div>
-        <!-- /mainrow -->
-        <div class="mainrow">
           <div class="maincol01 bgc04">
             <h3>위임장 / 동의서 / 증명서</h3>
             <p>
@@ -587,30 +583,33 @@
               있습니다.
             </p>
             <div class="btnwrap">
-              <a href="#" role="button">위임장/동의서</a>
-              <a href="#" role="button">증명서발급</a>
+              <a class="mainbtn01" href="#" role="button">위임장/동의서</a>
+              <a class="mainbtn01" href="#" role="button">증명서발급</a>
             </div>
           </div>
           <div class="maincol01 bgc05">
-            <h2>고객의 소리</h2>
+            <h3>고객의 소리</h3>
             <p>
               병원을 이용하시면서<br>
               감사 또는 건의하고자 하는<br>
               사항을 등록하실 수 있습니다.
             </p>
             <div class="btnwrap">
-              <a href="#" role="button">감사합니다</a>
-              <a href="#" role="button">건의합니다</a>
+              <a class="mainbtn01" href="#" role="button">감사합니다</a>
+              <a class="mainbtn01" href="#" role="button">건의합니다</a>
             </div>
           </div>
         </div>
         <!-- /mainrow -->
       </div>
-      <!-- /maininner -->
+      <!-- /maintopwrap -->
+
     </div>
-    <!-- /maincontents -->
+    <!-- /maininner -->
   </div>
-  <!-- /main-wrapper -->
+  <!-- /maincontents -->
+  </div>
+  <!-- /main-wrap -->
 </body>
 
 </html>
