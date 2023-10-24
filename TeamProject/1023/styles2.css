@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   letter-spacing: -1px;
   font-weight: 500;
+  background-color: #eeeeee;
 }
 
 img {
@@ -75,17 +76,17 @@ a {
   align-content: center;
 }
 
-.banner {
+/* .banner {
   margin-top: 40px 0;
-}
+} */
 
 .maincontent {
   margin: 60px 0;
+  background-color: lightgrey;
 }
 
 .mainrow01 {
   width: 100%;
-  background-color: #eeeeee;
   display: grid;
   align-content: center;
   justify-content: center;
