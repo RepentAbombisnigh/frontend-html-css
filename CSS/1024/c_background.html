@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Background</title>
+  <link rel="stylesheet" href="styles/c_background.css">
+</head>
+<body>
+  <!--  
+    ! 배경 색과 배경 범위 지정
+      : 웹 문서 전체 배경, 텍스트, 목록 등 특정한 요소에도 배경 지정 가능
+
+    ! background-color - 웹 문서의 요소에 배경색 지정
+      : 하위 항목으로 상속 X
+        ! 웹 문서의 요소는 기본적으로 투명이기에 body 요소에서 스타일 지정 시 문서 배경이 그대로 비춰지니 상속이 된 것 처럼 보인다.
+      
+      ? 16진수 | rgb | 색상 이름 등
+      
+    ! background-clip - 배경을 어디까지 적용할지 지정
+      ? border-box(=default): 박스 모델의 가장 외곽인 테두리까지 적용
+      ? padding-box: 박스 모델의 테두리를 뺀 패딩 범위까지 적용
+      ? content-box: 박스 모델의 내용(콘텐츠) 부분에만 적용
+
+    ! background-image
+      : 이미지 파일: *.jpg, *.pgn, *gif 형식 사용
+      : 요소보다 이미지 크기가 작을 경우, 이미지가 가로와 세로로 반복되면서 배경을 채움
+      : 파일 경로는 '' | "" 로 감싸주는게 좋음
+      ? url(파일 경로)
+
+    ! background-repeat
+      : 배경 이미지의 반복 방법 지정
+      ? no-repeat: 한 번만 표시하고 반복 X
+      ? repeat: 브라우저 화면에 가득 찰 때까지 가로와 세로로 반복(default)
+      ? repeat-x | repeat-y: 브라우저 화면 가로 | 세로로 반복
+
+    ! background-position
+      : 배경 이미지를 반복하지 않을 경우, 배경 이미지 위치 지정
+      ? 수평 = left | center | right | 백분율 | 길이 값
+      ? 수직 = top | center | bottom | 백분율 | 길이 값
+        ! 속성값을 하나만 지정시, 웹 브라우저가 지정한 값을 수평 위칫값으로 간주하고, 수평 위칫값은 50% | center로 간주
+
+    ! background-size
+      : 배경 이미지 크기 조절
+      ? auto(default)
+      ? contain: 요소 내 배경 이미지가 다 들어오도록 확대 | 축소
+      ? cover | 크기 | 백분율 : : 이미지의 너비와 높이를 지정(값이 하나만 지정될 경우 너빗값으로 인식, 해당 너빗값에 맞춘 높잇갚을 자동계산)
+
+    ! background-origin
+      : 배경 이미지를 배치하기 위한 기준 설정
+      ? content-box: 내용 부분에만 이미지 표시(default)
+      ? padding-box: 패딩까지 배경 이미지 표시
+      ? border-box: 테두리까지 배경 이미지 표시
+
+    ! background-attachment
+      : 배경 이미지 고정
+      ? scroll:default
+        : 스크롤하면 배경 이미지도 스크롤에 따라감
+      ? fixed
+  -->
+
+  <div id="container">
+    <div class="descend" id="clip-border">
+      <h1>롯데 자이언츠</h1>
+      <p>2023.10.24 사직야구장에서 경기가 열립니다.</p>
+    </div>
+    <div class="descend" id="clip-padding">
+      <h1>롯데 자이언츠</h1>
+      <p>2023.10.24 사직야구장에서 경기가 열립니다.</p>
+    </div>
+    <div class="descend" id="clip-content">
+      <h1>롯데 자이언츠</h1>
+      <p>2023.10.24 사직야구장에서 경기가 열립니다.</p>
+    </div>
+  </div>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+  <hr />
+  
+  <h2>KBO프로야구</h2>
+  <ul>
+    <li>롯데</li>
+    <li>두산</li>
+    <li>한화</li>
+    <li>SSG</li>
+  </ul>
+
+  <hr />
+
+  <h2>배경 이미지 크기 조절</h2>
+  <div id="container01">
+    <div id="bg01"></div>
+    <div id="bg02"></div>
+    <div id="bg03"></div>
+    <div id="bg04"></div>
+    <div id="bg05"></div>
+    <div id="bg06"></div>
+  </div>
+
+</body>
+</html>

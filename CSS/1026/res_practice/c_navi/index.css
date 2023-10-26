@@ -1,0 +1,22 @@
+.resNav ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: #333;
+  text-align: center;
+}
+
+.resNav li {
+  display: inline;
+  margin-right: 5px;
+}
+
+.resNav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* 600px이상시 가로 배치, 미만 세로배치 */
+@media screen and (max-width: 600px) {
+  .resNav li {display: block;}
+}

@@ -1,0 +1,88 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+#container {
+  width: 320px;
+  margin: 50px auto;
+}
+
+#card {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  border: 1px solid #0f0f0f;
+  background-color: white;
+}
+
+/* #card img {
+  width: 100%;
+  height: auto;
+} */
+
+.words {
+  position: absolute;
+  left: 50px;
+  top: 340px;
+  text-align: center;
+  width: 200px;
+}
+
+/* 태블릿 사이즈 */
+/* card 내부 세로 배치, 전체 container 자식요소(카드) 가로 배치 */
+
+/* //아래 사이즈들은 모두 임의로 된 것임. 사이즈를 대충 생각하고 지정하면서 수정 해야할 듯 */
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  #container {
+    width: 570px;
+    margin: 50px auto;
+  }
+  #card {
+    position: relative;
+    width: 550px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #0f0f0f;
+    background-color: white;
+  }
+  .words {
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    text-align: center;
+    width: 200px;
+  }
+}
+
+/* 데스크톱 사이즈 */
+@media screen and (min-width: 1440px) {
+  #container {
+    width: 1140px;
+    margin: 50px auto;
+  }
+  #card {
+    position: relative;
+    /* 카드를 가로로 배치 */
+    float: left;
+    width: 550px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #0f0f0f;
+    background-color: white;
+  }
+  .words {
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    text-align: center;
+    width: 200px;
+  }
+}
