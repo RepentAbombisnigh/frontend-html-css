@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube Clone codding</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base1.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
   <!-- 
     mobile first
@@ -15,20 +20,31 @@
     글자 이런거 무관 레이아웃만 구현하면 됌.
   -->
 
-  <div>
-    <div id="header-wrap">
-    </div>
-    <div id="main-wrap">
-      <div class="video">
-        <a type="video" href="#"></a>
+  <div id="header-wrap">
+    <div id="left-top">
+      <div class="btnbox01">
+        <!-- <a href="#"><img class="logo01" src="imgs/logo01.png" alt="logo01"></a>
+        <a href="#"><img class="logo02" src="imgs/logo02.png" alt="logo02"></a> -->
       </div>
-      <div class="chat-wrap">
-        <div class="topmenu"></div>
-        <div class="real-time-chat"></div>
-      </div>
-      <aside class="related-vid">
-      </aside>
     </div>
   </div>
+  <!-- /header-wrap -->
+  <div id="main-wrap">
+    <div id="video-wrap">
+      <video class="bg-vid" autoplay>
+        <source src="img/a.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div id="desc-wrap">
+      <div class="title"></div>
+      <div class="desc"></div>
+    </div>
+    <div id="related-vid">
+    </div>
+    <div id="comment-wrap">
+    </div>
+  </div>
+
 </body>
+
 </html>

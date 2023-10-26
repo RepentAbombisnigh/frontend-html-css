@@ -1,0 +1,75 @@
+/* 헤드 */
+#header-wrap {
+  height: 2em;
+  line-height: 2em;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: space-evenly;
+  border: 2px solid black;
+}
+
+/* 메인 */
+#main-wrap {
+  width: 470px;
+  height: 6500px;
+  border: 2px solid purple;
+}
+
+#video-wrap {
+  height: 250px;
+  margin: 10px auto;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+#desc-wrap {
+  width: 470px;
+  height: 200px;
+  border: 1px solid darkcyan;
+}
+
+#related-vid {
+  width: 470px;
+  height: 4000px;
+  margin: 10px auto;
+  border: 2px solid red;
+}
+
+#comment-wrap {
+  width: 470px;
+  position: absolute;
+  height: 2000px;
+  border: 2px solid green;
+}
+
+/* viewpoint breakout */
+@media screen and (min-width: 768px) {
+  #main-wrap {
+    height: 3000px;
+  }
+
+  #comment-wrap {
+    position: absolute;
+    height: 2550px;
+    top: 520px;
+  }
+
+  #related-vid {
+    position: relative;
+    width: 430px;
+    height: 3000px;
+    left: 470px;
+    bottom: 470px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #related-vid {
+    position: relative;
+    width: 1350px;
+    height: 3000px;
+    left: 500px;
+    bottom: 470px;
+  }
+}
