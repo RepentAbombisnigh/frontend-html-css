@@ -11,7 +11,7 @@
 
 /* 메인 */
 #main-wrap {
-  width: 470px;
+  width: 570px;
   height: 6500px;
   border: 2px solid purple;
 }
@@ -24,20 +24,20 @@
 }
 
 #desc-wrap {
-  width: 470px;
+  width: 570px;
   height: 200px;
   border: 1px solid darkcyan;
 }
 
 #related-vid {
-  width: 470px;
+  width: 570px;
   height: 4000px;
   margin: 10px auto;
   border: 2px solid red;
 }
 
 #comment-wrap {
-  width: 470px;
+  width: 570px;
   position: absolute;
   height: 2000px;
   border: 2px solid green;
@@ -57,9 +57,9 @@
 
   #related-vid {
     position: relative;
-    width: 430px;
+    width: 530px;
     height: 3000px;
-    left: 470px;
+    left: 570px;
     bottom: 470px;
   }
 }
@@ -67,9 +67,9 @@
 @media screen and (min-width: 1440px) {
   #related-vid {
     position: relative;
-    width: 1350px;
+    width: 1250px;
     height: 3000px;
-    left: 500px;
+    left: 600px;
     bottom: 470px;
   }
 }
