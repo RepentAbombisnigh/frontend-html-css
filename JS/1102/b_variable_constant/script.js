@@ -85,9 +85,46 @@ document.write(brithYear + '년에 태어난 사람의 나이는 ' + age + '세�
     ? 유효 범위: 변수 | 상수 | 함수가 선언되어 있는 영역
       : 해당 영역에서 변수 및 함수에 접근할 수 있는 범위
 
-      - 전역 유효범위
-      - 함수 유효범위
-      - 블록 유효범위
+      - 전역 유효범위(global scope)
+        : 코드의 모든 부문에서 접근할 수 있는 변수, 함수
+        : 많이 작성 하지 않는 것이 좋음
+
+      - 지역 유효범위(local scope)
+        - 함수 유효범위(function scope)
+          : var 키워드로 선언된 변수
+            ! 변수를 중복해서 선언할 수 있다는 위험, 변수가 속하는 범위가 애매하다는 점에서 코드에 혼란을 줄 수 있기 떄문에 최근엔 사용 X
+        - 블록 유효범위(block scope)
+          : 블록 ({}, 중괄호) 내에서만 접근할 수 있는 변수
+          : let, const 키워드로 선언된 변수
+
+    ? 호이스팅(hoisting): 변수와 함수 선언은 코드 실행 전에 메모리에 저장
+      : 변수의 경우, 선언부만 제일 상단부로 호이스팅됌. 
+
+      ? var는 선언부가 호이스팅 됌
+      ? let, const는 호이스팅 되지만 TDZ(temporal dead zone) 때문에 접근 불가 
 
 */
 
+//! 변수의 호이스팅
+
+// var의 호이스팅 (f12로 콘솔창 확인)
+
+console.log(a); //f12 콘솔창에서 undefiend로 나옴. 이전에 var = a; 가 생략되었다고 추론하기 때문.
+
+var a = 5;
+console.log(a); //f12 콘솔창에서 5로 나옴. var = a;가 지정되어있기 때문.
+
+// let과 const의 호이스팅
+
+// console.log(b); 
+//Uncaught ReferenceError: Cannot access 'b' before initialization 라는 오류 발생, 이전에 b의 초기화가 이루어지지 않았기 때문.
+let b = 15;
+console.log(b); // b의 초기화가 이루어졌기에 해당 값은 정상 출력
+{
+  let b = 10;
+  console.log(b);
+} // 중괄호 내에서만 b 값이 10으로 인정되므로 아래의 콘솔엔 5로 값이 나온다.
+
+console.log(b);
+
+//! var 키워드의 경우: 변수를 중복해서 선언할 수 있다는 위험성, 변수가 속하는 범위가 애매하다는 점에서 코드에 혼란을 줄 수 있기 떄문에 최근엔 사용 X

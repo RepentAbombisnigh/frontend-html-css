@@ -1,0 +1,3 @@
+extension > es6 > VS Code JavaScript (ES6) snippets -apt install
+코드를 빠르게 작성할 수 있도록 도와주는 코드 조각들
+-> console.log()를 clg로 단축가능
