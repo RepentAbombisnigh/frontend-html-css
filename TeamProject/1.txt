@@ -15,3 +15,37 @@ span txt로 <>안내 하고, span line height지정
 
 CSS 가장 많이 쓰는 초기화: Myer reset CSS
 https://meyerweb.com/eric/tools/css/reset/
+
+
+/* | 생성 방법 */
+C:\frontend-html-css\Practice\naver_login2\style.css
+/* 인접한 li 요소에 왼쪽 패딩을 추가 */
+.find-wrapper li+li {
+  padding-left: 28px;
+}
+
+/* | 생성 방법 */
+.find-wrapper li+li::before {
+  /* 가상 요소의 내용은 비워둠 */
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  width: 1px;
+  height: 12px;
+  border-radius: 0.5px;
+  background-color: #dadada;
+}
+
+/* 블라인드 적용 방법 */
+C:\frontend-html-css\Practice\naver_login2\style.css
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}\
+
+
+
+a_javascript에 주요 기능 첨부 예정
