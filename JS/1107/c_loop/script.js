@@ -13,13 +13,13 @@
   
     //? 배열 선언
       // '변수' | '상수 키워드' 배열명 = [요소1, 요소2, ...]
-      let fruits = ['apple', 'banana', 'cherry'];
+let fruits = ['apple', 'banana', 'cherry'];
       //? 배열 요소 접근
         // 배열의 각 요소에 인덱스 번호로 접근
-  console.log(fruits[0]);
+console.log(fruits[0]);
       //? 배열 길이 확인
         //배열명.length 속성 사용
-  console.log(fruits.length);
+console.log(fruits.length);
 
 //! JS 반복문의 종류
   //? for, while, do-while
@@ -83,4 +83,4 @@ for (let index = 1; index <= 20; index++) {
   if (index % 3 === 0) {
     console.log(index);
   }
-}
+};

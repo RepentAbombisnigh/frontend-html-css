@@ -36,8 +36,12 @@ document.getElementById('predict-button').addEventListener('click', function () 
 function displayResults(results, gameOutcomes) {
   // 현재 시리즈의 결과를 문자열로 작성
   let resultText = `현재 시리즈 결과: LG ${results['LG']} : KT ${results['KT']}`;
+<<<<<<< HEAD
 
   gameOutcomes.forEach(function (outcome) {
+=======
+  gameOutcomes.forEach(function(outcome) {
+>>>>>>> 70d299a163775a94e4434000ea11e86faf59c13b
     resultText += `<br /> ${outcome} <br /> `;
   })
 
@@ -48,7 +52,15 @@ function displayResults(results, gameOutcomes) {
     <strong>
       ${results['LG'] == 4 ? 'LG Twins' : 'KT Wiz'}가 시리즈에서 승리했습니다.
     </strong>`;
+<<<<<<< HEAD
   }
   // HTML 문서 내에 결과를 표시할 요소를 찾아서 내부 HTML을 결과 문자열로 설정
   document.getElementById('prediction-result').innerHTML = resultText;
 }
+=======
+    }
+
+    document.getElementById('prediction-result').innerHTML = resultText;
+  }
+
+>>>>>>> 70d299a163775a94e4434000ea11e86faf59c13b
