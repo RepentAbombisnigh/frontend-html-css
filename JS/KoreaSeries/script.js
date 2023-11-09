@@ -34,7 +34,7 @@ function displayResults(results, gameOutcomes) {
   //현재 시리즈의 결과를 문자열로 작성
   let resultText = `현재 시리즈 결과: LG ${results['LG']} : KT ${results['KT']}`;
   gameOutcomes.forEach(function(outcome) {
-    resultText += `<br /> ${outcome} <br />` ;
+    resultText += `<br /> ${outcome} <br /> `;
   })
   // lg 또는 kt가 4승을 달성했다면 시리즈 승리 메세지를 결과 문자열에 추가
   if (results['LG'] == 4 || results['KT'] == 4) {
@@ -44,6 +44,7 @@ function displayResults(results, gameOutcomes) {
       ${results['LG'] == 4 ? 'LG Twins' : 'KT Wiz'}가 시리즈에서 승리했습니다.
     </strong>`;
     }
+
+    document.getElementById('prediction-result').innerHTML = resultText;
   }
 
-document.getElementById('prediction-result').innerHTML = resultText;
