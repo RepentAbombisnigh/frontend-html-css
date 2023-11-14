@@ -6,7 +6,7 @@ console.log('---forEach()---');
       // 배열이 가지고 있는 메소드 중에서 콜백 함수를 활용하는 메소드의 형태: function (value, index, array) {}
       //: 3가지 매개변수를 반드시 모두 작성할 필요는 없으나, 순서는 맞춰야함.
 const members = [273, 52, 103, 32, 57];
-members.forach(function (value, index, array) {
+members.forEach(function (value, index, array) {
   console.log(`${index}번 째 요소: ${value}`);
 });
 

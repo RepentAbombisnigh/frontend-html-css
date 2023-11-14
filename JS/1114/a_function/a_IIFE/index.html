@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 즉시 호출 함수</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <script src="script.js"></script>
+  <!-- !닫히는 body 태그 바로 이전에 위치 -->
+  <!-- 외부의 JS파일을 가져오고, script 태그 내에서 직접 js 코드 사용 가능 -->
+  <script>
+    // let PI = 3.14;
+    // console.log(`파이의 값은 ${PI}입니다.`);
+    // error: 식별자가 이미 사용되고 있음을 알려주는 에러
+    // 상단 JS파일 가져온 것에 동일한 코드 PI가 있기에 script 불러오는 것을 주석처리 하면 에러 사라짐.
+    // 이를 해결하기 위해 해당 스크립트를 중괄호에 넣기만 해도 해결됌.= 스코프 제한
+    {
+    let PI = 3.1415;
+    console.log(`파이의 값은 ${PI}입니다.`);
+    }
+    {
+      let PI = 3.1;
+      console.log(`파이의 값은 ${PI}입니다.`);
+      {
+        // 섀도잉: 블록이 다른 경우 내부 변수가 외부 변수를 가리는 현상
+        let PI = 3.14159;
+        console.log(`파이의 값은 ${PI}입니다.`);
+      }
+    }
+    </script>
+</body>
+</html>
