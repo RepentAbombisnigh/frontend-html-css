@@ -1,0 +1,19 @@
+.topbar div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+
+.nav_bar li {
+  float: left;
+  color: black;
+}
+
+.nav_bar li a {
+  display: block;
+  padding: 8px;
+}

@@ -1,21 +1,11 @@
-body {
-  width: 2000px;
-  margin: 0 auto;
-  padding: 0;
-  font-size: 16px;
-  letter-spacing: -2px;
-  line-height: 1.5em;
-  align-content: center;
-  justify-content: center;
+.topmenu01 {
+  max-width: 100%;
+  background-color: #2763BA;
 }
 
-.b {
-  font-weight: 600;
-}
-
-.s {
-  font-size: 14px;
-}
+/* .navbgc {
+  background-color: #008ACE;
+} */
 
 /* 하위 */
 
@@ -23,16 +13,16 @@ body {
   margin: 30px 0;
 }
 
-.location-container {
+.location_container {
   position: relative;
 }
 
-.location-container img {
+.location_container img {
   width: auto;
   height: auto;
 }
 
-.location-container .location-button {
+.location_container .location_button {
   position: absolute;
   top: 25px;
   left: 25px;
@@ -58,7 +48,9 @@ td {
 td img {
   padding: 0 5px;
   vertical-align: middle;
-  /* float: left; */
+  position: relative;
+  bottom: 1px;
+  padding: 0 2px;
 }
 
 .tbbg {
@@ -66,20 +58,16 @@ td img {
   text-align: center;
 }
 
-.icon-posit {
-  position: relative;
-  bottom: 1px;
-  padding: 0 2px;
-}
+.icon_posit {}
 
 .float {
   float: left;
 }
 
-.button-wrap {
+.button_wrap {
   margin: 30px 0;
 }
 
-.button-wrap a {
+.button_wrap a {
   margin-right: 20px;
 }

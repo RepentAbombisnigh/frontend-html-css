@@ -5,35 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>오시는길</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <div class="topbarwrap">
+  <div class="navbarwrap">
+    <hr />
     <div class="topbar">
       <div class="topmenu01">
-        <div>
-          <a class="home" href="#"><img src="imgs/home.png" alt="home"></a>
-        </div>
-        <div class="topitem01">
-          <a href="#">진료안내</a>
-        </div>
-        <div class="topitem01">
-          <a href="#">외래진료안내</a>
-        </div>
-        <div class="topitem01">
-          <a href="#">예약안내</a>
-        </div>
+        <ul class="nav_bar">
+          <li>
+            <a class="home" href="#">
+              <img src="imgs/home.png" alt="home">
+            </a>
+          </li>
+          <li><a href="#">진료안내</a></li>
+          <li><a href="#">위치안내</a></li>
+          <li><a href="#">오시는길</a></li>
+          <li class="navbgc01"><a href="#">진료예약</a></li>
+          <li class="navbgc01"><a href="#">예약조회</a></li>
+        </ul>
       </div>
-      <div class="topmenu02">
-        <div class="topitem02">
-
-        </div>
-      </div>
+      <!-- /topmenu01 -->
     </div>
+    <!-- /topbar -->
   </div>
-  <!-- /topbarwrap -->
-
+  <!-- /navbarwrap -->
+  <br />
 
   <div class="asidebarwrap">
     <div class="asidemenuone">
@@ -68,20 +68,20 @@
   <div class="mainwrap">
     <div class="content" id="how-to-visit">
       <h1>오시는길</h1>
-      <div class="location-container">
+      <div class="location_container">
         <img src="/TeamProject/personal/location/imgs/img_location01_map.jpg" alt="location">
-        <a class="location-button s" role="button" href="#">본관 가는 길 및 층별 안내도</a>
+        <a class="location_button s" role="button" href="#">본관 가는 길 및 층별 안내도</a>
       </div>
     </div>
     <!-- /content01 how-to-visit-->
     <div class="content" id="subway">
       <h2>지하철</h2>
-      <div class="table-wrap">
+      <div class="table_wrap">
         <table>
           <tr>
             <td class="tbbg">혜화(서울대학교병원)역</td>
             <td>
-              <img class="icon-posit" src="imgs/line4.png" alt="line4">
+              <img src="imgs/line4.png" alt="line4">
               4호선 혜화(서울대학교병원)역 3번 출구 (암병원까지 도보 8~10분 거리)
             </td>
           </tr>
@@ -91,7 +91,7 @@
     <!-- /content02 -->
     <div class="content" id="bus">
       <h2>버스</h2>
-      <div class="table-wrap">
+      <div class="table_wrap">
         <table>
           <tr>
             <td class="tbbg" rowspan="2">
@@ -100,14 +100,14 @@
               [01-221]
             </td>
             <td>
-              <img class="icon-posit2" src="imgs/bus.png" alt="bus" />
+              <img class="icon_posit2" src="imgs/bus.png" alt="bus" />
               109, 273, 601, N16
             </td>
           </tr>
           <tr>
             <!-- <td></td> -->
             <td>
-              <img class="icon-posit2" src="imgs/branch.png" alt="branch" />
+              <img class="icon_posit2" src="imgs/branch.png" alt="branch" />
               2112
             </td>
           </tr>
@@ -186,28 +186,28 @@
     <!-- /content03 -->
     <div class="content" id="train_airport">
       <h2>기차 / 공항</h2>
-      <div class="table-wrap">
+      <div class="table_wrap">
         <table>
           <tr>
             <td class="tbbg">서울역</td>
             <td>
-              <img class="icon-posit" src="imgs/line4.png" alt="line4">
+              <img src="imgs/line4.png" alt="line4">
               서울역 지하철 4호선 → 혜화(서울대학교병원)역 3번 출구
             </td>
           </tr>
           <tr>
             <td class="tbbg">용산역</td>
             <td>
-              <img class="icon-posit" src="imgs/line4.png" alt="line4">
+              <img src="imgs/line4.png" alt="line4">
               신용산역 지하철 4호선 → 혜화(서울대학교병원)역 3번 출구
             </td>
           </tr>
           <tr>
             <td class="tbbg">김포공항</td>
             <td>
-              <img class="icon-posit" src="imgs/line5.png" alt="line5">
+              <img src="imgs/line5.png" alt="line5">
               김포공항역 지하철 5호선 →
-              <img class="icon-posit" src="imgs/line4.png" alt="line4">
+              <img src="imgs/line4.png" alt="line4">
               4동대문역사공원역(4호선으로 환승) → <br />
               혜화(서울대학교병원)역 3번 출구
             </td>
@@ -224,14 +224,14 @@
     <!-- /content04 -->
     <div class="content05">
       <h2>고속버스</h2>
-      <div class="table-wrap">
+      <div class="table_wrap">
         <table>
           <tr>
             <td class="tbbg">강남터미널</td>
             <td>
-              <img class="icon-posit" src="imgs/line3.png" alt="line3" />
+              <img src="imgs/line3.png" alt="line3" />
               고속터미널역 지하철 3호선 →
-              <img class="icon-posit" src="imgs/line4.png" alt="line4" />
+              <img src="imgs/line4.png" alt="line4" />
               충무로역(4호선으로 환승) → <br />
               혜화(서울대학교병원)역 3번 출구
             </td>
@@ -239,9 +239,9 @@
           <tr>
             <td class="tbbg">남부터미널</td>
             <td>
-              <img class="icon-posit" src="imgs/line3.png" alt="line3" />
+              <img src="imgs/line3.png" alt="line3" />
               고속터미널역 지하철 3호선 →
-              <img class="icon-posit" src="imgs/line4.png" alt="line4" />
+              <img src="imgs/line4.png" alt="line4" />
               충무로역(4호선으로 환승) → <br />
               혜화(서울대학교병원)역 3번 출구
             </td>
@@ -249,9 +249,9 @@
           <tr>
             <td class="tbbg">동서울터미널</td>
             <td>
-              <img class="icon-posit" src="imgs/line2.png" alt="line2" />
+              <img src="imgs/line2.png" alt="line2" />
               강변역 지하철 2호선 →
-              <img class="icon-posit" src="imgs/line4.png" alt="line4" />
+              <img src="imgs/line4.png" alt="line4" />
               동대문역사공원역(4호선으로 환승) → <br />
               혜화(서울대학교병원)역 3번 출구
             </td>
@@ -259,11 +259,11 @@
           <tr>
             <td class="tbbg">삼봉터미널</td>
             <td>
-              <img class="icon-posit" src="imgs/line7.png" alt="line7" />
+              <img src="imgs/line7.png" alt="line7" />
               상봉역 지하철 7호선 →
-              <img class="icon-posit" src="imgs/line5.png" alt="line5" />
+              <img src="imgs/line5.png" alt="line5" />
               군자역(5호선으로 환승) → <br />
-              <img class="icon-posit" src="imgs/line4.png" alt="line4" />
+              <img src="imgs/line4.png" alt="line4" />
               동대문운동장역(4호선으로 환승) → 혜화(서울대학교병원)역 3번 출구
             </td>
           </tr>
@@ -292,7 +292,7 @@
     <!-- /content06 -->
     <div class="content07">
       <h2>포털 지도로 찾기</h2>
-      <div class="button-wrap">
+      <div class="button_wrap">
         <a href="#" role="button"><img src="imgs/naver.jpg" alt="naver map"></a>
         <a href="#" role="button"><img src="imgs/daum.jpg" alt="daum map"></a>
         <a href="#" role="button"><img src="imgs/google.jpg" alt="google map"></a>
@@ -300,9 +300,9 @@
     </div>
     <!-- /content07 -->
     <div class="content08">
-      <div class="info-container">
+      <div class="info_container">
         <img src="imgs/img_publicTransit.jpg" alt="public transit" />
-        <div class="info-btn-wrap">
+        <div class="info_btn_wrap">
           <a href="#" role="buttorn">버스</a>
           <a href="#" role="buttorn">지하철</a>
           <a href="#" role="buttorn">마을버스</a>

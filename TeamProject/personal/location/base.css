@@ -1,0 +1,30 @@
+body {
+  width: 2000px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: -2px;
+  line-height: 1.5em;
+  align-content: center;
+  justify-content: center;
+}
+
+.mainwrap {
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.b {
+  font-weight: 600;
+}
+
+.s {
+  font-size: 14px;
+}

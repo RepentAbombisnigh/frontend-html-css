@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 이벤트</title>
+  <style>
+    button {
+      margin: 5px;
+      padding: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HTML 이벤트 핸들러 property -->
+  <button>Change Color</button>
+
+  <hr />
+
+  <!-- 인라인 이벤트 핸들러 -->
+  <button onclick="bgChange()">Click me</button>
+  <button onclick="alt()">Press me</button>
+
+  <hr />
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+
+  <hr />
+  <!-- 3. addEventListener -->
+  <button>Change Color</button>
+
+  <script src="script.js"></script>
+  <!-- !닫히는 body 태그 바로 이전에 위치 -->
+</body>
+
+</html>
