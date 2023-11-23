@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS 문서 객체 조작</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // const h1 = (text) => `<h1>${text}</h1>`;
+    //? body태그가 생성되기 이전의 script 태그로 body태그를 조작 (error)
+    // document.body.innerHTML += h1('첫 번쨰 script 태그');
+    document.addEventListener('DOMContentLoaded', () => {
+      const h1 = (text) => `<h1>${text}</h1>`;
+      document.body.innerHTML += h1('첫 번쨰 script 태그');
+    });
+    // 다 읽고 난 뒤이기에 h2 태그 아래에 표기
+  </script>
+</head>
+<body>
+  <h1></h1>
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <script>
+    const h2 = (text) => `<h1>${text}</h1>`;
+    // body태그가 생성되기 이전의 script 태그로 body태그를 조작
+    document.body.innerHTML += h2('2번쨰 script 태그');
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
